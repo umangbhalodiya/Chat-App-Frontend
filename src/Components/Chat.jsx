@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
-import { ReactComponent as Send } from "../assets/icons/send.svg";
 
 function Chat({ socket, username, room }) {
   const [currentMessage, setCurrentMessage] = useState("");
@@ -70,7 +69,7 @@ function Chat({ socket, username, room }) {
           }}
         />
         <button className="btn_send" onClick={sendMessage}>
-          <Send width="40px" height="25px" fill="#ffffff" />
+          Send
         </button>
       </div>
     </div>
